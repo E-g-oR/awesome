@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        display: block;
+        margin: 10px 20px;
+      }
+      .resultInput {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="firstInput" type="text" />
+    <input class="secondInput" type="text" />
+    <button onclick="func()">Посчитать</button>
+    <input class="resultInput" type="text" />
+
+
+    
+<script>
+      const firstNumber = document.querySelector(".firstInput"),
+        secondNumber = document.querySelector(".secondInput"),
+        result = document.querySelector(".resultInput");
+
+      function func() {
+        let first = firstNumber.value,
+          second = secondNumber.value;
+        result.value = first*second;
+      }
+    </script>
+  </body>
+</html>
